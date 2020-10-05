@@ -1,0 +1,21 @@
+Use StringBuilder:
+
+String str;
+Char a, b, c;
+a = 'i';
+b = 'c';
+c = 'e';
+
+StringBuilder sb = new StringBuilder();
+sb.append(a);
+sb.append(b);
+sb.append(c);
+str = sb.toString();
+
+One-liner:
+
+new StringBuilder().append(a).append(b).append(c).toString();
+
+Doing ""+a+b+c gives:
+
+new StringBuilder().append("").append(a).append(b).append(c).toString();
